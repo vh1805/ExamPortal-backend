@@ -56,7 +56,7 @@ public class UserController {
     }
 
     @ExceptionHandler(UserFoundException.class)
-    public ResponseEntity<?> exeptionHandler(UserFoundException e) {
+    public ResponseEntity<?> exceptionHandler(UserFoundException e) {
         return ResponseEntity.ok(e.getMessage());
     }
 }
